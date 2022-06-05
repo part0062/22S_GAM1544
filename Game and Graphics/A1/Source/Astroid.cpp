@@ -30,6 +30,7 @@ Astroid::Astroid() :
 
 void Astroid::OnRender(BatchRenderer& batchRenderer)
 {
+	
 	batchRenderer.RenderLineStrip(m_Points, ColorList::White, 1.0f, m_Position, m_Angle);
 }
 
@@ -42,4 +43,26 @@ void Astroid::OnUpdate(float delta)
 	Vector2 displacement = m_Velocity * delta;
 
 	m_Position += displacement;
+
+//Make the astroid rotate
+	m_Angle += delta * -1.0f;
+
+//Make astroid loop around the screen
+	if (m_Position.x < 0.0f)
+	{
+		m_Position.x = GetScreenWidth();
+	}
+	else if (m_Position.x > GetScreenWidth())
+	{
+		m_Position.x = 0.0f;
+	}
+
+	if (m_Position.y < 0.0f)
+	{
+		m_Position.y = GetScreenHeight();
+	}
+	else if (m_Position.y > GetScreenHeight())
+	{
+		m_Position.y = 0.0f;
+	}
 }
