@@ -2,7 +2,7 @@
 
 using namespace GameDev2D;
 
-Game::Game():m_Ship(Ship()), m_Astroid(Astroid())
+Game::Game():m_Ship(Ship())
 {
 	for (int i = 0; i < ASTROID_NUM; i++)
 	{
@@ -17,7 +17,6 @@ Game::~Game()
 void Game::OnUpdate(float delta)
 {
 	m_Ship.OnUpdate(delta);
-	m_Astroid.OnUpdate(delta);
 
 	for (auto& x : m_Astroids)
 	{
@@ -30,7 +29,6 @@ void Game::OnRender(BatchRenderer& batchRenderer)
 	batchRenderer.BeginScene();
 
 	m_Ship.OnRender(batchRenderer);
-	m_Astroid.OnRender(batchRenderer);
 
 	for (auto& x : m_Astroids)
 	{

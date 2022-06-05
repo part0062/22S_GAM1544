@@ -25,7 +25,6 @@ public:
 
 private:
 	Ship m_Ship;
-	Astroid m_Astroid;
 	std::vector<Astroid> m_Astroids;
 	const int ASTROID_NUM = 20;
 };

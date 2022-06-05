@@ -1,11 +1,9 @@
 #include "Astroid.h"
 
-//TODO Add randomizing to starting position
-
 Astroid::Astroid() :
 	m_Points{},
 	m_Position(GameDev2D::Math::RandomFloat(0.0f, GetScreenWidth()), 0.0f),
-	m_Speed(GameDev2D::Math::RandomFloat(-300.0f, 300.0f))
+	m_Speed(GameDev2D::Math::RandomFloat(-200.0f, 200.0f))
 {
 	m_Angle = GameDev2D::Math::RandomFloat(0.0f, (2.0f * (float)M_PI));
 	const float NUM_POINTS = 8.0f;
@@ -13,7 +11,7 @@ Astroid::Astroid() :
 	m_Radians = (2.0f * (float)M_PI / NUM_POINTS);
 
 	const float RADIUS_MIN = 10.0f;
-	const float RADIUS_MAX = 50.0f;
+	const float RADIUS_MAX = 30.0f;
 
 	for (int i = 0; i < NUM_POINTS; i++)
 	{
