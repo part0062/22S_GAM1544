@@ -1,4 +1,6 @@
-﻿  Astroid.cpp
-C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Astroid.cpp(5,54): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Astroid.cpp(5,31): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+﻿  Ship.cpp
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(10,54): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(10,31): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(106,32): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(115,33): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
   GameDev2D.vcxproj -> C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe

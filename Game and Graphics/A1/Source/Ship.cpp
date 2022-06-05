@@ -92,6 +92,10 @@ void Ship::OnUpdate(float delta)
 	{
 		m_Speed += (shipDir * SHIP_SPEED);
 	}
+	else if (!m_Forward)
+	{
+		m_Speed = Vector2::Zero;
+	}
 
 	m_Position +=  m_Speed * delta;
 
