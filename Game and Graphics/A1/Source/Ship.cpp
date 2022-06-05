@@ -1,8 +1,6 @@
 #include "Ship.h"
 #include <iostream>
 
-//TODO Add a max speed
-
 using namespace GameDev2D;
 
 Ship::Ship() :
@@ -69,6 +67,7 @@ void Ship::OnKeyEvent(KeyCode keyCode, KeyState keyState)
 void Ship::OnUpdate(float delta)
 {
 	const float SHIP_SPEED = 10.0f;
+	const float MAX_SPEED = 500.0f;
 
 	if (m_IsRotating)
 	{
@@ -98,6 +97,11 @@ void Ship::OnUpdate(float delta)
 	}
 
 	m_Position +=  m_Speed * delta;
+
+	if (m_Speed.Length() > MAX_SPEED)
+	{
+		m_Speed = m_Speed.Normalized() * MAX_SPEED;
+	}
 
 //Make the ship loop around the screen
 

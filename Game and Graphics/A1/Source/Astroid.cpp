@@ -1,5 +1,7 @@
 #include "Astroid.h"
 
+//TODO Add randomizing to starting position
+
 Astroid::Astroid() :
 	m_Points{},
 	m_Position{},
