@@ -1,4 +1,2 @@
-﻿  Astroid.cpp
-C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Astroid.cpp(52,32): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Astroid.cpp(61,33): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+﻿  Game.cpp
   GameDev2D.vcxproj -> C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe

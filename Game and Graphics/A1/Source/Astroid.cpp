@@ -4,8 +4,8 @@
 
 Astroid::Astroid() :
 	m_Points{},
-	m_Position{},
-	m_Speed(300.0f)
+	m_Position(GameDev2D::Math::RandomFloat(0.0f, GetScreenWidth()), 0.0f),
+	m_Speed(GameDev2D::Math::RandomFloat(-300.0f, 300.0f))
 {
 	m_Angle = GameDev2D::Math::RandomFloat(0.0f, (2.0f * (float)M_PI));
 	const float NUM_POINTS = 8.0f;
