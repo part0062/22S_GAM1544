@@ -13,6 +13,7 @@ Game::~Game()
 void Game::OnUpdate(float delta)
 {
 	m_Ship.OnUpdate(delta);
+	m_Astroid.OnUpdate(delta);
 }
 
 void Game::OnRender(BatchRenderer& batchRenderer)
