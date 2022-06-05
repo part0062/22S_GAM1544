@@ -2,6 +2,7 @@
 
 #include <GameDev2D.h>
 #include "Ship.h"
+#include "Astroid.h"
 
 using namespace GameDev2D;
 

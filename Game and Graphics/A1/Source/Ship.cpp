@@ -15,10 +15,17 @@ Ship::Ship() :
 	m_Speed{0.0f, 0.0f} {} 
 
 
+
+//--------------------------------------------------------------------------------------------------
+
 void Ship::OnRender(BatchRenderer& batchRenderer)
 {
 	batchRenderer.RenderLineStrip(m_Points, GameDev2D::ColorList::White, 1.0f, m_Position, m_Angle);
 }
+
+
+
+//--------------------------------------------------------------------------------------------------
 
 void Ship::OnKeyEvent(KeyCode keyCode, KeyState keyState)
 {
@@ -49,11 +56,15 @@ void Ship::OnKeyEvent(KeyCode keyCode, KeyState keyState)
 	{
 		m_Forward = true;
 	}
-	if (keyCode == KeyCode::Up && keyState == KeyState::Up)
+	else if (keyCode == KeyCode::Up && keyState == KeyState::Up)
 	{
 		m_Forward = false;
 	}
 }
+
+
+
+//--------------------------------------------------------------------------------------------------
 
 void Ship::OnUpdate(float delta)
 {
@@ -74,6 +85,7 @@ void Ship::OnUpdate(float delta)
 //Move the ship forward
 
 	float angleToRadians = Math::DegreesToRadians(m_Angle);
+
 	Vector2 shipDir(cos(m_Angle), sin(m_Angle));
 
 	if (m_Forward)
@@ -84,6 +96,7 @@ void Ship::OnUpdate(float delta)
 	m_Position +=  m_Speed * delta;
 
 //Make the ship loop around the screen
+
 	if (m_Position.x < 0.0f)
 	{
 		m_Position.x = GetScreenWidth();
