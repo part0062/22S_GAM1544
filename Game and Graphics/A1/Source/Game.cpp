@@ -2,9 +2,8 @@
 
 using namespace GameDev2D;
 
-Game::Game()
+Game::Game():m_Ship(Ship())
 {
-	m_Ship = Ship();
 }
 
 Game::~Game()
@@ -13,6 +12,7 @@ Game::~Game()
 
 void Game::OnUpdate(float delta)
 {
+	m_Ship.OnUpdate(delta);
 }
 
 void Game::OnRender(BatchRenderer& batchRenderer)
@@ -26,6 +26,8 @@ void Game::OnRender(BatchRenderer& batchRenderer)
 
 void Game::OnKeyEvent(KeyCode keyCode, KeyState keyState)
 {
+	m_Ship.OnKeyEvent(keyCode, keyState);
+
 	if( keyCode == KeyCode::Escape && keyState == KeyState::Down )
 	{
 		Application::Get().Quit();

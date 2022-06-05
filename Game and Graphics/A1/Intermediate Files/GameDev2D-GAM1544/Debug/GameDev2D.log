@@ -1,2 +1,6 @@
 ﻿  Ship.cpp
-  GameDev2D.vcxproj -> C:\$chool\Game and Graphics\A1\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(8,54): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(8,31): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(87,32): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Source\Ship.cpp(96,33): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+  GameDev2D.vcxproj -> C:\Users\allan\OneDrive\Desktop\22S_GAM1544\Game and Graphics\A1\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe

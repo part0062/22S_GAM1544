@@ -12,8 +12,9 @@ public:
 private:
 	std::vector<GameDev2D::Vector2> m_Points;
 	GameDev2D::Vector2 m_Position;
-
+	GameDev2D::Vector2 m_Speed;
 	float m_Angle;
-	float m_PosX;
-	float m_PosY;
+	bool m_IsRotating;
+	bool m_IsCounterClockwise;
+	bool m_Forward;
 };
