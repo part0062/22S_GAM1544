@@ -2,7 +2,7 @@
 
 using namespace GameDev2D;
 
-Game::Game():m_Ship(Ship())
+Game::Game():m_Ship(Ship()), m_Astroid(Astroid())
 {
 }
 
@@ -20,6 +20,7 @@ void Game::OnRender(BatchRenderer& batchRenderer)
 	batchRenderer.BeginScene();
 
 	m_Ship.OnRender(batchRenderer);
+	m_Astroid.OnRender(batchRenderer);
 
 	batchRenderer.EndScene();
 }

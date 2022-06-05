@@ -7,7 +7,6 @@ class Astroid
 {
 public:
 	Astroid();
-	~Astroid();
 
 	void OnUpdate(float delta);
 	void OnRender(BatchRenderer& batchRenderer);

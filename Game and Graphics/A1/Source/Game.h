@@ -25,4 +25,5 @@ public:
 
 private:
 	Ship m_Ship;
+	Astroid m_Astroid;
 };
