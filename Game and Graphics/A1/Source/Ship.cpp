@@ -4,12 +4,13 @@
 using namespace GameDev2D;
 
 Ship::Ship() :
-	m_Points{{5.0f, 0.0f}, {0.0f, 25.0f}, {45.0f, 0.0f}, {0.0f, -25.0f}, {5.0f, 0.0f}},
+	m_Points{{5.0f, 0.0f}, {-5.0f, 15.0f}, {30.0f, 0.0f}, {-5.0f, -15.0f}, {5.0f, 0.0f}},
 	m_Position{GetHalfScreenWidth(), GetHalfScreenHeight()},
 	m_Angle(0.0f),
 	m_IsRotating(false),
 	m_IsCounterClockwise(false),
 	m_Forward(false),
+	m_Backwards(false),
 	m_Speed{0.0f, 0.0f} {} 
 
 
@@ -58,6 +59,16 @@ void Ship::OnKeyEvent(KeyCode keyCode, KeyState keyState)
 	{
 		m_Forward = false;
 	}
+
+//breaking the ship
+	if (keyCode == KeyCode::Down && keyState == KeyState::Down)
+	{
+		m_Backwards = true;
+	}
+	else if (keyCode == KeyCode::Down && keyState == KeyState::Up)
+	{
+		m_Backwards = false;
+	}
 }
 
 
@@ -83,17 +94,18 @@ void Ship::OnUpdate(float delta)
 
 //Move the ship forward
 
-	float angleToRadians = Math::DegreesToRadians(m_Angle);
-
 	Vector2 shipDir(cos(m_Angle), sin(m_Angle));
 
-	if (m_Forward)
+	if (m_Backwards)
+	{
+		m_Speed = m_Speed * (0.95f);
+		if (m_Speed < Vector2::Unit) {
+			m_Speed = Vector2::Zero;
+		}
+	}
+	else if (m_Forward)
 	{
 		m_Speed += (shipDir * SHIP_SPEED);
-	}
-	else if (!m_Forward)
-	{
-		m_Speed = Vector2::Zero;
 	}
 
 	m_Position +=  m_Speed * delta;

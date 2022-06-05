@@ -6,12 +6,12 @@ Astroid::Astroid() :
 	m_Speed(GameDev2D::Math::RandomFloat(-200.0f, 200.0f))
 {
 	m_Angle = GameDev2D::Math::RandomFloat(0.0f, (2.0f * (float)M_PI));
-	const float NUM_POINTS = 8.0f;
+	const float NUM_POINTS = 16.0f;
 
 	m_Radians = (2.0f * (float)M_PI / NUM_POINTS);
 
 	const float RADIUS_MIN = 10.0f;
-	const float RADIUS_MAX = 30.0f;
+	const float RADIUS_MAX = 45.0f;
 
 	for (int i = 0; i < NUM_POINTS; i++)
 	{

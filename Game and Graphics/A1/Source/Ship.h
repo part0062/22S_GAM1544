@@ -17,4 +17,5 @@ private:
 	bool m_IsRotating;
 	bool m_IsCounterClockwise;
 	bool m_Forward;
+	bool m_Backwards;
 };
