@@ -1,0 +1,68 @@
+﻿  stdafx.cpp
+  GameLoop.cpp
+  Audio.cpp
+  CircleRenderer.cpp
+  LineRenderer.cpp
+  PointRenderer.cpp
+  IRenderer.cpp
+  SpriteRenderer.cpp
+  Gamepad.cpp
+  AABB.cpp
+  LineSegment.cpp
+  Transformable.cpp
+  Log.cpp
+  Profile.cpp
+  GameDev2D.cpp
+  AnimatedSprite.cpp
+  Buffer.cpp
+  Camera.cpp
+  Color.cpp
+  Font.cpp
+  BatchRenderer.cpp
+  Generating Code...
+  Compiling...
+  Shader.cpp
+  Sprite.cpp
+  SpriteAtlas.cpp
+  SpriteFont.cpp
+  Texture.cpp
+  VertexArray.cpp
+  Keyboard.cpp
+  Mouse.cpp
+  Math.cpp
+  Matrix.cpp
+  Random.cpp
+  Vector2.cpp
+  AudioEngine.cpp
+  DebugUI.cpp
+  Graphics.cpp
+  InputManager.cpp
+  ResourceManager.cpp
+  Png.cpp
+  Text.cpp
+  Wave.cpp
+  Generating Code...
+  Compiling...
+  Application.cpp
+  Config.cpp
+  FileSystem.cpp
+  GameWindow.cpp
+  HardwareInfo.cpp
+  json_reader.cpp
+  json_value.cpp
+  json_writer.cpp
+  Astroid.cpp
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Astroid.cpp(5,62): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Astroid.cpp(51,32): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Astroid.cpp(60,33): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+  Game.cpp
+  stb_image.cpp
+  main.cpp
+  Ship.cpp
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Ship.cpp(8,54): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Ship.cpp(8,31): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Ship.cpp(122,32): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Source\Ship.cpp(131,33): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+  Generating Code...
+  glad.c
+  GameDev2D.vcxproj -> C:\Users\allan\OneDrive\Desktop\22S_GAM1544\A1\A1\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe
