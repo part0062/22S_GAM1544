@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assignment2",
+    "\\Assignment2\\Source"
   ],
-  "SelectedNode": "\\GameDev2D.sln (Game and Graphics\\A1-Asteroids-Base\\GameDev2D.sln)",
+  "SelectedNode": "\\Assignment2\\GameDev2D.sln",
   "PreviewInSolutionExplorer": false
 }
