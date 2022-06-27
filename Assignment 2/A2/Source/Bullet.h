@@ -20,7 +20,11 @@ public:
 	void SetVelocity(Vector2 velocity);
 
 	float GetRadius();
-	
+
+	//Shooting methods
+	void Activate(const Vector2& position, const Vector2& velocity);
+	bool IsActive();
+
 private:
 	static const Vector2 M_VELOCITY;
 	static const float M_SPEED;

@@ -11,6 +11,7 @@ class Game
 {
 private:
 	static const int NUM_ASTEROIDS;
+	static const int NUM_BULLETS = 3;
 
 public:
 	Game();
@@ -31,6 +32,7 @@ public:
 
 private:
 	Player* m_pPlayer;
+
 	std::vector<Asteroid*> m_Asteroids;
 	Bullet* m_Bullet;
 };

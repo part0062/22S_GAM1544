@@ -41,10 +41,15 @@ void Game::OnUpdate(float delta)
 	for( Asteroid* pAsteroid : m_Asteroids )
 	{
 		pAsteroid->OnUpdate( delta );
-		if (m_Bullet != nullptr){
-			if (CollisionCheck(pAsteroid->GetPosition(), m_Bullet->GetPosition(), pAsteroid->GetRadius(), m_Bullet->GetRadius())) {
+		if (m_Bullet != nullptr)
+		{
+			if (CollisionCheck(pAsteroid->GetPosition(), m_Bullet->GetPosition(), pAsteroid->GetRadius(), m_Bullet->GetRadius())) 
+			{
 				delete pAsteroid;
+				pAsteroid = nullptr;
+
 				delete m_Bullet;
+				m_Bullet = nullptr;
 			}
 		}
 	}
@@ -100,6 +105,7 @@ void Game::OnMouseMovedEvent(float mouseX, float mouseY)
 {
 }
 
+//Collision Checking
 
 bool Game::CollisionCheck(Vector2 asteroidPos, Vector2 bulletPos, float asteroidR, float bulletR)
 {
