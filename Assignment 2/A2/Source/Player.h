@@ -33,6 +33,8 @@ public:
 	float GetAngle();
 	Vector2 GetVelocity();
 
+	float GetRadius();
+
 private:
 	Vector2 m_Velocity;
 	Vector2 m_Position;

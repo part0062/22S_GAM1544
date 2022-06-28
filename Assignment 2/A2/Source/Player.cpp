@@ -114,3 +114,8 @@ Vector2 Player::GetVelocity()
 	return m_Velocity;
 }
 
+float Player::GetRadius()
+{
+	return 3.0f;
+}
+

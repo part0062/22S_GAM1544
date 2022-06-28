@@ -1,1 +1,4 @@
-﻿  GameDev2D.vcxproj -> C:\$chool\22S_GAM1544\Assignment 2\A2\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe
+﻿  Game.cpp
+C:\$chool\22S_GAM1544\Assignment 2\A2\Source\Game.cpp(61,74): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\$chool\22S_GAM1544\Assignment 2\A2\Source\Game.cpp(61,118): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  GameDev2D.vcxproj -> C:\$chool\22S_GAM1544\Assignment 2\A2\Builds\GameDev2D-GAM1544\Debug\GameDev2D-GAM1544.exe

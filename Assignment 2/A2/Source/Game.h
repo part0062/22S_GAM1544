@@ -28,11 +28,16 @@ public:
 	void OnMouseButtonEvent(MouseButton button, MouseButtonState state, float mouseX, float mouseY);
 	void OnMouseMovedEvent(float mouseX, float mouseY);
 
-	bool CollisionCheck(Vector2 asteroidPos, Vector2 bulletPos, float asteroidR, float bulletR);
+	bool CollisionCheck(Asteroid* a, Bullet* b);
+	bool CollisionCheck(Asteroid* a, Player* p);
+
+	Bullet* GetBullet();
+	void SpawnBullet(const Vector2& pos, const Vector2& velocity, float angle);
 
 private:
 	Player* m_pPlayer;
-
 	std::vector<Asteroid*> m_Asteroids;
-	Bullet* m_Bullet;
+	Bullet* m_Bullets[NUM_BULLETS];
+
+	float m_Elapsed;
 };
