@@ -64,12 +64,13 @@ void Game::OnUpdate(float delta)
 
 		for (int i = 0; i < NUM_BULLETS; i++)
 		{
-			if (CollisionCheck(pAsteroid, m_Bullets[i]))
+			if (m_Bullets[i]->IsActive() && CollisionCheck(pAsteroid, m_Bullets[i]))
 			{
 				delete pAsteroid;
 				pAsteroid = nullptr;
 
-				m_Bullets[i]->SetActive(false);
+				delete m_Bullets[i];
+				m_Bullets[i] = new Bullet();
 			}
 		}
 	}

@@ -24,13 +24,10 @@ Bullet::~Bullet()
 
 void Bullet::OnUpdate(float delta)
 {
-	if (m_IsActive)
-	{
-		float angleRadians = Math::DegreesToRadians(m_Angle);
-		Vector2 direction = Vector2(cos(angleRadians), sin(angleRadians));
-		m_Velocity += direction * M_SPEED * delta;
-		m_Position += m_Velocity * delta;
-	}
+	float angleRadians = Math::DegreesToRadians(m_Angle);
+	Vector2 direction = Vector2(cos(angleRadians), sin(angleRadians));
+	m_Velocity += direction * M_SPEED * delta;
+	m_Position += m_Velocity * delta;
 }
 
 void Bullet::OnRender(BatchRenderer& batchRenderer)
